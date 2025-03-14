@@ -22,22 +22,19 @@ public class ex2 {
         M[i][j] = scanner.nextInt();
       }
     }
-    int sum = 0;
-    long product = 1;
+    int somme = 0;
+    long produit = 1;
     
     for (int i = 0; i < n1; i++) {
       for (int j = 0; j < n2; j++) {
-        sum += M[i][j];
-        product *= M[i][j];
+        somme += M[i][j];
+        produit *= M[i][j];
       }
     }
     
-    double average = (double) sum / (n1 * n2);
     System.out.println("\nResults:");
-    System.out.println("Sum = " + sum);
-    System.out.println("Product = " + product);
-    System.out.printf("Average = %.2f%n", average);
-    
+    System.out.println("Sum = " + somme);
+    System.out.println("Product = " + produit);   
     scanner.close();
   }
 }
